@@ -16,4 +16,4 @@ function flattenArray($arr) {
 	}
 	
 	return $outputArr;
-// }
+}
