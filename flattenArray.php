@@ -1,5 +1,5 @@
 <?php
-$a = array(1, 2, array(array(3 => array(4, array(5)))), array(6, 7, 8), array(9));
+$a = array(1, 2, array(array(3 => array(4, array(5)))), array(6, 7, 8), array(9, '{10}'));
 echo implode(' ', flattenArray($a)) . PHP_EOL;
 
 function flattenArray($arr) {
