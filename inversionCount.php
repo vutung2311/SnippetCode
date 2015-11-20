@@ -7,9 +7,9 @@ function countSplitInversion($arr) {
     sort($firstHalf); sort($secondHalf);
     $inversionCount = 0;
     while ( !empty($firstHalf) && !empty($secondHalf) ) {
-        if ($firstHalf[0] <= $secondHalf[0]) {
+        if ((float) $firstHalf[0] <= (float) $secondHalf[0]) {
             array_shift($firstHalf);
-        } elseif ($secondHalf[0] < $firstHalf[0]) {
+        } elseif ((float) $secondHalf[0] < (float) $firstHalf[0]) {
             array_shift($secondHalf);
             $inversionCount += count($firstHalf);
         }
